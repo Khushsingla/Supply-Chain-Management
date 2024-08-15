@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Location Map</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  
+   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+  <style>
+    #map { height: 670px; }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script>
+    async function fetchCoordinates() {
+      try {
+        const response = await fetch('/driver-coordinates');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+
+        // Initialize the map with the fetched coordinates
+        initializeMap(data.latitude, data.longitude);
+      } catch (error) {
+        console.error('Error fetching coordinates:', error);
+      }
+    }
+
+    function initializeMap(driverLat, driverLng) {
+      const map = L.map('map').setView([driverLat, driverLng], 5);
+
+      var tilelayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 22,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+      const supplierCoordinates = [28.6139, 77.2090]; // Delhi
+      const retailerCoordinates = [13.0827, 80.2707]; // Chennai
+
+      // Marker for the driver's current location
+      L.marker([driverLat, driverLng]).addTo(map);
+
+      // Marker for the supplier's location
+      L.marker(supplierCoordinates).addTo(map);
+
+      // Marker for the retailer's location
+      //L.marker(retailerCoordinates).addTo(map);
+
+      // Routing control from driver's location to supplier and then to retailer
+      L.Routing.control({
+        waypoints: [
+          L.latLng(driverLat, driverLng),
+          L.latLng(supplierCoordinates[0], supplierCoordinates[1]),
+        //  L.latLng(retailerCoordinates[0], retailerCoordinates[1])
+        ]
+      }).addTo(map);
+    }
+
+    fetchCoordinates();
+  </script>
+</body>
+</html>

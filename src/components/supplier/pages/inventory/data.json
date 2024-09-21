@@ -1,0 +1,102 @@
+[
+    {
+      "name": "Wireless Mouse",
+      "productId": "WM123456",
+      "price": 25.99,
+      "quantity": 150,
+      "ratings": 4.5,
+      "mfg_date": "2023-01-15",
+      "exp_date": "2026-01-15",
+      "img": "./wirelessMouse.jpg"
+    },
+    {
+      "name": "Bluetooth Headphones",
+      "productId": "BH789012",
+      "price": 59.99,
+      "quantity": 85,
+      "ratings": 4.7,
+      "mfgDate": "2023-03-20",
+      "expiryDate": "2025-03-20",
+      "img": "./headPhone.jpg"
+    },
+    {
+      "name": "USB-C Charger",
+      "productId": "UC345678",
+      "price": 18.49,
+      "quantity": 200,
+      "ratings": 4.2,
+      "mfgDate": "2022-11-05",
+      "expiryDate": "2025-11-05",
+      "img": "./charger.jpg"
+    },
+    {
+      "name": "Smartwatch",
+      "productId": "SW901234",
+      "price": 129.99,
+      "quantity": 50,
+      "ratings": 4.8,
+      "mfgDate": "2023-02-10",
+      "expiryDate": "2026-02-10",
+      "img": "./smartPhone.jpg"
+    },
+    {
+      "name": "External Hard Drive",
+      "productId": "EH567890",
+      "price": 79.99,
+      "quantity": 120,
+      "ratings": 4.3,
+      "mfgDate": "2023-01-30",
+      "expiryDate": "2028-01-30",
+      "img": "./hardDisk.jpg"
+    },
+    {
+      "name": "Gaming Keyboard",
+      "productId": "GK234567",
+      "price": 49.99,
+      "quantity": 75,
+      "ratings": 4.6,
+      "mfgDate": "2023-04-15",
+      "expiryDate": "2027-04-15",
+      "img": "./keyBoard.jpg"
+    },
+    {
+      "name": "LED Monitor",
+      "productId": "LM890123",
+      "price": 159.99,
+      "quantity": 45,
+      "ratings": 4.4,
+      "mfgDate": "2023-05-20",
+      "expiryDate": "2028-05-20",
+      "img": "./monitor.jpg"
+    },
+    {
+      "name": "Portable Speaker",
+      "productId": "PS456789",
+      "price": 39.99,
+      "quantity": 130,
+      "ratings": 4.5,
+      "mfgDate": "2023-02-25",
+      "expiryDate": "2026-02-25",
+      "img": "./speaker.jpg"
+    },
+    {
+      "name": "Wireless Router",
+      "productId": "WR012345",
+      "price": 89.99,
+      "quantity": 65,
+      "ratings": 4.1,
+      "mfgDate": "2023-03-10",
+      "expiryDate": "2027-03-10",
+      "img": "./router.jpg"
+    },
+    {
+      "name": "Smart Home Hub",
+      "productId": "SH678901",
+      "price": 99.99,
+      "quantity": 90,
+      "ratings": 4.7,
+      "mfgDate": "2023-04-05",
+      "expiryDate": "2026-04-05",
+      "img": "./smartPhone.jpg"
+    }
+  ]

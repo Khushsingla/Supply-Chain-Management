@@ -1,0 +1,73 @@
+[
+    {
+      "store_id": "S001",
+      "store_name": "Store A",
+      "location": "123 Elm Street, Springfield",
+      "distance": 10.5,
+      "important_details": "High foot traffic area, major shopping hub."
+    },
+    {
+      "store_id": "S002",
+      "store_name": "Store B",
+      "location": "456 Oak Avenue, Springfield",
+      "distance": 15.2,
+      "important_details": "Near university campus, student discounts available."
+    },
+    {
+      "store_id": "S003",
+      "store_name": "Store C",
+      "location": "789 Pine Road, Springfield",
+      "distance": 8.7,
+      "important_details": "Known for excellent customer service and support."
+    },
+    {
+      "store_id": "S004",
+      "store_name": "Store D",
+      "location": "101 Maple Lane, Springfield",
+      "distance": 20.3,
+      "important_details": "Large store with a wide range of products."
+    },
+    {
+      "store_id": "S005",
+      "store_name": "Store E",
+      "location": "202 Birch Boulevard, Springfield",
+      "distance": 5.4,
+      "important_details": "Specializes in electronics and gadgets."
+    },
+    {
+      "store_id": "S006",
+      "store_name": "Store F",
+      "location": "303 Cedar Street, Springfield",
+      "distance": 12.8,
+      "important_details": "Popular for home goods and furniture."
+    },
+    {
+      "store_id": "S007",
+      "store_name": "Store G",
+      "location": "404 Willow Way, Springfield",
+      "distance": 18.1,
+      "important_details": "Located in a residential area with loyal customers."
+    },
+    {
+      "store_id": "S008",
+      "store_name": "Store H",
+      "location": "505 Chestnut Crescent, Springfield",
+      "distance": 14.6,
+      "important_details": "Offers a variety of gourmet food items."
+    },
+    {
+      "store_id": "S009",
+      "store_name": "Store I",
+      "location": "606 Sycamore Drive, Springfield",
+      "distance": 11.2,
+      "important_details": "Renowned for its seasonal sales and promotions."
+    },
+    {
+      "store_id": "S010",
+      "store_name": "Store J",
+      "location": "707 Redwood Road, Springfield",
+      "distance": 22.5,
+      "important_details": "High-end fashion store with exclusive brands."
+    }
+  ]
+  
